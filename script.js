@@ -23,7 +23,7 @@ $(function() {
 
         // process form
         var formData = "name=" + name + "&points=" + points + "&hours=" + hours;
-        $.post("getGPA.php", formData, function(data) {
+        $.post("basic-gpa-calc/getGPA.php", formData, function(data) {
                 $("#showGPA").show();
                 $("#result").text(data);
             });
